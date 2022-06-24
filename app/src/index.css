@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  background: #010001;
+
+
+  /* background: aqua; */
+
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  position: absolute;
+  right: 5%;
+  padding: 20px;
+  color: white;
+  list-style: none;
+}
+
+.logo {
+  background-image: url(/src/img/logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 16rem;
+  height: 36px;
+  position: absolute;
+  margin-top: 10px;
+  left: 4rem;
+}
+
+.navbar .toggle-icon {
+  display: none;
+}
+
+.main {
+  background-image: url(./img/yer.png);
+  background-repeat: no-repeat;
+  height: 130vh;
+  width: 100%;
+  background-size: cover;
+  color: white;
+}
+
+.main h1 {
+  position: relative;
+  top: 2rem;
+  text-align: center;
+
+  font-size: 44px;
+  letter-spacing: 10px;
+}
+
+.main h3 {
+  text-align: center;
+
+  margin-top: 4rem;
+  font-size: 23px;
+}
+
+.card {
+  height: 1718px;
+  position: relative;
+  width: 100%;
+  background: #010001;
+  color: white;
+  overflow: hidden;
+
+}
+
+.wrapper {
+  background-image: url(./img/raketa.png);
+  background-repeat: no-repeat;
+  height: 1718px;
+  position: absolute;
+  width: 100%;
+  background-size: contain;
+  background-position: right;
+  top: 0;
+}
+
+.card h2 {
+  position: relative;
+  text-align: center;
+  left: -13rem;
+  top: 17rem;
+  font-size: 59px;
+}
+
+.card h3 {
+  position: relative;
+  text-align: center;
+  left: -13rem;
+  top: 40rem;
+  font-size: 59px;
+}
+
+.card h4 {
+  position: relative;
+  text-align: center;
+  left: -13rem;
+  top: 45rem;
+  font-size: 25px;
+}
+
+
+.card ul {
+  position: relative;
+  text-align: center;
+  top: 18rem;
+  left: -12rem;
+  list-style: none;
+  font-size: 21px;
+  line-height: 41px;
+
+
+}
+
+.card li span {
+  margin-left: 1rem;
+}
+
+
+.footer {
+  width: 100%;
+  height: 500px;
+  background: aqua;
+}
+
+.footer .loggo {
+  background-image: url(/src/img/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 36px;
+  position: relative;
+  top: 3rem;
+  background-position: center;
+}
+.footer ol{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+}
+.footer ol a{
+  margin: 20px;
+}
+
+
+
+
+
+@media (max-width:576px) {
+  .navbar {
+    position: relative;
+    transition: 0.5s height ease-in-out;
+  }
+
+  .navbar.expanded {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .navbar.expanded ul {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    left: 7rem;
+    overflow: hidden;
+
+  }
+
+  .navbar.expanded ul li {
+    margin: 15px 0;
+    font-size: 24px;
+  }
+  .navbar.expanded ul a {
+    margin: 15px 0;
+    font-size: 24px;
+  }
+
+  .navbar .logo {
+    position: absolute;
+  }
+
+  .navbar .toggle-icon {
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .main {
+    background-image: url(./img/The_Earth_seen_from_Apollo_17.jpg);
+  }
+
+  .main h1 {
+    font-size: 20px;
+  }
+
+  .main h3 {
+    margin-top: 2.5rem;
+    font-size: 15px;
+
+  }
+
+  .wrapper {
+    position: relative;
+    top: 0;
+    height: 900px;
+    left: 0;
+    background-position: center;
+
+  }
+
+  .card h2 {
+    left: 0rem;
+    top: 0rem;
+    font-size: 44px;
+    text-align: center;
+  }
+
+  .card h3 {
+    left: 0rem;
+    top: 0rem;
+    font-size: 44px;
+    text-align: center;
+  }
+
+  .card h4 {
+    left: 0rem;
+    top: 0rem;
+    text-align: center;
+    padding: 40px;
+  }
+
+  .card ul {
+    top: 0rem;
+    left: 0rem;
+    font-size: 17px;
+    line-height: 32px;
+
+  }
+
+  .card li span {
+    margin-left: 1rem;
+  }
+  .footer ol a{
+    display: block;
+    flex-direction: column;
+  }
+  
+}
+
+
+
+
+@media (max-width:992px) {
+  .navbar {
+    position: relative;
+    transition: 0.5s height ease-in-out;
+  }
+
+  .navbar.expanded {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .navbar.expanded ul {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    left: 7rem;
+    overflow: hidden;
+
+  }
+
+  .navbar.expanded ul li {
+    margin: 15px 0;
+    font-size: 24px;
+  }
+  .navbar.expanded ul a {
+    margin: 15px 0;
+    font-size: 24px;
+  }
+
+  .navbar .logo {
+    position: absolute;
+  }
+
+  .navbar .toggle-icon {
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .main {
+    height: 70vh;
+  }
+
+  .card h2 {
+    position: relative;
+    text-align: center;
+    left: 0;
+    top: 0;
+  }
+
+  .card h3 {
+    position: relative;
+    text-align: center;
+    left: 0;
+    top: 0;
+  }
+
+  .card h4 {
+    position: relative;
+    text-align: center;
+    left: 0;
+    top: 0;
+  }
+
+  .card ul {
+    position: relative;
+    text-align: center;
+    top: 0;
+    left: 0;
+
+  }
+
+  .wrapper {
+    position: relative;
+    top: 0rem;
+    height: 900px;
+    left: 0;
+    background-position: center;
+
+  }
+
+}
+
+
+@media (max-width:1200px) {
+  .wrapper {
+    margin-left: 50px;
+  }
+}
